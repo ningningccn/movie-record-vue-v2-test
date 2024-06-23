@@ -1,0 +1,21 @@
+@import url('./font.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html,
+    body {
+        font-family: 'NotoSans', sans-serif;
+        font-weight: 400;
+        color: white;
+        background: #303132;
+    }
+}
+
+@layer components {
+    .container {
+        @apply mx-auto max-w-[1440px] px-20;
+    }
+}
